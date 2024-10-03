@@ -12,154 +12,127 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container">
-        <div class="d-flex flex-column w-100">
-          <div class="row w-100 align-items-center flex-grow-1 my-2">
-            <div class="col-lg-3">
-              <a class="navbar-brand" href="#">
-                <img src="assets/img/logof1.png" alt="logo" height="40">
+        <a class="navbar-brand" id="mobile" href="#">
+          <img src="assets/img/logof1.png" alt="logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown  position-static">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
               </a>
-            </div>
-            <div class="col-lg-6">
-              <ul class="navbar-nav justify-content-center">
-                <li class="nav-item dropdown dropdown-hover position-static">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Products
-                  </a>
-                  <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" >
-                    <div class="container p-3">
-                      <div class="row m-auto">
-                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0 p-3 bg-body-tertiary rounded-3 border border-black">
-                          <h6 class="dropdown-header fs-6 fw-bold">Featured Products</h6>
-                          <ul class="list-group">
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                          </ul>
-                          <h6 class="dropdown-header fs-6 fw-bold">List Mega Menu 1</h6>
-                          <ul class="list-group">
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                          <h6 class="dropdown-header fs-6 fw-bold">List Mega Menu 1</h6>
-                          <ul class="list-group">
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                          </ul>
-                          <h6 class="dropdown-header fs-6 fw-bold">List Mega Menu 1</h6>
-                          <ul class="list-group">
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
-                          <h6 class="dropdown-header fs-6 fw-bold">List Mega Menu 1</h6>
-                          <ul class="list-group">
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                          </ul>
-                          <h6 class="dropdown-header fs-6 fw-bold">List Mega Menu 1</h6>
-                          <ul class="list-group">
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                          <h6 class="dropdown-header fs-6 fw-bold">List Mega Menu 1</h6>
-                          <ul class="list-group">
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                          </ul>
-                          <h6 class="dropdown-header fs-6 fw-bold">List Mega Menu 1</h6>
-                          <ul class="list-group">
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="link d-flex justify-content-center">
-                        <a class="my-2" href="#">See all products</a>
-                      </div>
+              <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" >
+                  <div class="row m-auto p-3">
+                    <div class="col-md-3 p-3 bg-body-tertiary rounded-3 border border-black">
+                      <h6 class="dropdown-header">Featured Products</h6>
+                      <ul class="list-group">
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                      </ul>
+                      <h6 class="dropdown-header">List Mega Menu 1</h6>
+                      <ul class="list-group">
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <h6 class="dropdown-header">List Mega Menu 1</h6>
+                      <ul class="list-group">
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                      </ul>
+                      <h6 class="dropdown-header">List Mega Menu 1</h6>
+                      <ul class="list-group">
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <h6 class="dropdown-header">List Mega Menu 1</h6>
+                      <ul class="list-group">
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                      </ul>
+                      <h6 class="dropdown-header">List Mega Menu 1</h6>
+                      <ul class="list-group">
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <h6 class="dropdown-header">List Mega Menu 1</h6>
+                      <ul class="list-group">
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                      </ul>
+                      <h6 class="dropdown-header">List Mega Menu 1</h6>
+                      <ul class="list-group">
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                      </ul>
                     </div>
                   </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Solutions
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Solution 1</a></li>
-                    <li><a class="dropdown-item" href="#">Solution 2</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Developers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Partners</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-3 d-flex justify-content-end">
-              <a class="btn btn-primary ms-2" href="#">Log in</a>
-              <a class="btn btn-primary ms-2" href="#">Sign up</a>
-            </div>
-          </div>
-          <hr>
-          <div class="row w-100 my-2 align-items-center">
-            <div class="col-lg-10">
-              <ul class="navbar-nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Tutorials</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Questions</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Learning Paths</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">For Businesses</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Product Docs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Social Impact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-2 d-flex justify-content-end">
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search Community" aria-label="Search">
-              </form>
-            </div>
-          </div>  
+                  <hr>
+                  <div class="link d-flex justify-content-center">
+                    <a class="my-2" href="#">See all products</a>
+                  </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Developers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="button">
+            <button type="button" class="btn">Log in</button>
+            <button type="button" class="btn btn-primary">Sign up</button>
+          </form>
         </div>
       </div>
     </nav>
+    <div class="nav-scroller bg-body shadow-sm">
+      <nav class="nav d-flex justify-content-center p-3" aria-label="Secondary navigation">
+        <a class="nav-link" href="#">Tutorials</a>
+        <a class="nav-link" href="#">Questions</a>
+        <a class="nav-link" href="#">Learning Paths</a>
+        <a class="nav-link" href="#">For Businesses</a>
+        <a class="nav-link" href="#">Product Docs</a>
+        <a class="nav-link" href="#">Social Impact</a>
+        <form class="d-flex" role="button">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </nav>
+    </div>
+
     <!-- Navbar End -->
    
     <!-- Slider 1 -->
